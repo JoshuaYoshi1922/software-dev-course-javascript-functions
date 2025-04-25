@@ -37,47 +37,30 @@ console.log("Welcome, Alice!");
 console.log("Welcome, Bob!");
 console.log("Welcome, Charlie!");
 
-function greet(name) {
-    console.log(`Welcome, ${name}!`);
-}
 
-greet("Alice");
-greet("Bob");
-greet("Charlie");
-
-//I feel mine was pretty good.
 
 // Script 2 - Sum calculation
 let num1 = 5, num2 = 10;
 let sum = num1 + num2;
-console.log("The sum of 5 and 10 is " + sum);
+console.log("The sum of 5 and 10 is " + sum); // The sum of 5 and 10 is 15
 
 
-function calculateSum(5, 10) {
-    return a + b;
-}
-console.log(calculateSum()) 
-
-// I had the parameters incorrect.
 
 // Script 3 - Product calculation
 let product = num1 * num2;
-console.log("The product of 5 and 10 is " + product);
+console.log("The product of 5 and 10 is " + product); //The product of 5 and 10 is 50
 
-function calculateProduct(a, b){
-    return a* b
-}
 
-consolelog(calculateProduct(5, 10) // 50
-           // For the most part pretty good
 
-           
+
 // Script 4 - Print names from a list
 let names = ["Alice", "Bob", "Charlie"];
 console.log("Names in the list:");
 for (let i = 0; i < names.length; i++) {
     console.log(names[i]);
 }
+
+
 
 /*
 ===========================================
@@ -98,3 +81,45 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+//Refactor Script 1
+const greetUser = function(name) {
+    console.log("Welcome, " + name + "!");
+ };
+ greetUser("Alice"); // Welcome, Alice!
+ greetUser("Bob"); // Welcome, Bob!
+ greetUser("Charlie");  // Welcome, Charlie!
+ 
+
+ //Refactor Script 2
+let addNumbers = function(num1, num2) {
+    
+    return num1 + num2;
+ };
+ console.log("The sum of 5 and 10 is " + addNumbers(5, 10)); // The sum of 5 and 10 is 15
+
+
+//Refactor Script 3
+ function productFunction(a,b){
+    return a * b;
+}
+let numb1 = 5;
+let numb2 = 10;
+let sump = productFunction(numb1, numb2);
+console.log("The product of 5 and 10 is " + sump); // The product of 5 and 10 is 50
+
+
+// Refactor Script 4
+function printPeople(array){
+    console.log("Names in the list:")
+for (let i=0; i<array.length; i++){
+    console.log(array[i]);
+
+}
+
+}
+printPeople(["Alice", "Bob", "Charlie"]);
+// Names in the list:
+// Alice
+// Bob
+// Charlie
