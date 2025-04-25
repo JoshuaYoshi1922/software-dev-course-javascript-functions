@@ -37,15 +37,41 @@ console.log("Welcome, Alice!");
 console.log("Welcome, Bob!");
 console.log("Welcome, Charlie!");
 
+function greet(name) {
+    console.log(`Welcome, ${name}!`);
+}
+
+greet("Alice");
+greet("Bob");
+greet("Charlie");
+
+//I feel mine was pretty good.
+
 // Script 2 - Sum calculation
 let num1 = 5, num2 = 10;
 let sum = num1 + num2;
 console.log("The sum of 5 and 10 is " + sum);
 
+
+function calculateSum(5, 10) {
+    return a + b;
+}
+console.log(calculateSum()) 
+
+// I had the parameters incorrect.
+
 // Script 3 - Product calculation
 let product = num1 * num2;
 console.log("The product of 5 and 10 is " + product);
 
+function calculateProduct(a, b){
+    return a* b
+}
+
+consolelog(calculateProduct(5, 10) // 50
+           // For the most part pretty good
+
+           
 // Script 4 - Print names from a list
 let names = ["Alice", "Bob", "Charlie"];
 console.log("Names in the list:");
